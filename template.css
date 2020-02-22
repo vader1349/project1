@@ -3,6 +3,9 @@ body{
     align-items: center;
 }
 #header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: black;
     border-bottom:3px solid #930000;
     width: auto;
@@ -10,6 +13,19 @@ body{
     font-family: fantasy;
     font-size:40px;
     color: #930000;
+}
+#header-pic{
+    position:relative;
+}
+#title{
+    position:absolute;
+    left: 50px;
+    top: 20px;
+}
+#search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 #slide{
     background-color: black;
