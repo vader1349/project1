@@ -11,13 +11,15 @@
             <div id="title">The Court</div>
             <div id="search-log-sign">
                 <input type="text" style="height:20px;width:200px"/>&nbsp;
-                <div id="search-icon"><img src="images/search.png" height="30px"/></div>&nbsp;
+                <div id="search">
+                    <img id="search-icon" src="images/search1.png" height="30px" onmouseout="restore();" onmouseover="replace()";/>
+                </div>&nbsp;
                 <div class="log-sign">Log in</div>
                 <div class="log-sign">Sign in</div>
             </div>
         </div>
         <div id="slide">
-            <img class="silde-img" src="images/slide1.jpg" height="380px"/>
+            <img src="images/slide1.png" height="390px"/>
         </div>
         <div id="menu">
             <div class="menu-element">Home</div>
@@ -25,7 +27,43 @@
             <div class="menu-element">Bands</div>
             <div class="menu-element">News</div>
             <div class="menu-element">Contact Us</div>
-        </div><br>
-        <div id="content"></div>
+        </div>
+        <div id="main">
+            <div id="side">asd</div>
+            <div id="content">
+                <div class="pic">
+                    <img src="images/pic1.jpg" width="24.5%">
+                    <img src="images/pic2.jpg" width="24.5%">
+                    <img src="images/pic3.jpg" width="24.5%">
+                    <img src="images/pic4.jpg" width="24.5%">
+                </div>
+                <div id="text">
+                    <h1 style="color: #930000;">Welcome!</h1><br>
+                    <p>This is <i>The Court</i>, a place for prog rock fans and all the people who 
+                        are guided here by destiny.Here you can discover the history of prog rock, 
+                        the introduction of iconic prog rocks bands, their works, and the latest news. 
+                        You can also contact us to offer your advice and make the community a better place.
+                         Enjoy your journey!</p>
+                </div><br><br><br>
+                <div class="pic">
+                    <img src="images/pic5.jpg" width="24.5%">
+                    <img src="images/pic6.jpg" width="24.5%">
+                    <img src="images/pic7.jpg" width="24.5%">
+                    <img src="images/pic8.jpg" width="24.5%">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-side"></div>
+            <div id="info"><br><br><br>© 2020 Junfeng Dai&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.</div>
+        </div>
     </body>
+    <script language="javascript">
+        function replace(){
+            document.getElementById('search-icon').src="images/search2.png";
+        }
+        function restore(){
+            document.getElementById('search-icon').src="images/search1.png";
+        }
+    </script>
 </html>
