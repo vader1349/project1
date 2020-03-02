@@ -2,13 +2,13 @@ body{
     background-color: black;
     align-items: center;
     font-family: fantasy;
+    color: #930000;
 }
 p{
-    color: #930000;
     font-size:large;
 }
-p::first-letter{
-    font-size: 2em;
+a{
+    text-decoration: none
 }
 #header{
     display: flex;
@@ -66,17 +66,20 @@ p::first-letter{
     height:400px;
 }
 #menu{
+    position: absolute;
     background-color: #930000;
-    width: auto;
-    height:33px;
+    width: 100%;
+    height:35px;
+    z-index: 2;
 }
 .menu-element{
     float: left;
     background-color: black;
+    margin: 0;
     border: 0;
+    padding: 0;
     width:120px;
     height:30px;
-    font-family: fantasy;
     font-size:20px;
     text-align: center;
     color: #930000;
@@ -85,21 +88,40 @@ p::first-letter{
     background-color: #930000;
     color: white;
 }
+.sub-element{
+    display: none;
+    border-top:3px;
+    background-color: black;
+    width:120px;
+    height:30px;
+}
+.sub-element:hover{
+    background-color: #930000;
+    color: white;
+}
 #main{
+    position: relative;
+    top: 35px;
+    z-index: 1;
+}
+#body{
     display: flex;
     flex-direction: row;
     background-color: black;
     width:100%;
 }
 #side{
-    width:10%;
-    border-right: 3px solid #930000;
+    width:12%;
+    border-right: 5px solid #930000;
 }
 #content{
-    background-color: whitesmoke;
-    width: 80%;
+    width: 76%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+span{
+    font-size: 2em;
 }
 .pic{
     display: flex;
@@ -107,26 +129,26 @@ p::first-letter{
     justify-content: space-evenly;
     padding:5px 0;
 }
-.pic img:hover{
+.show:hover{
     filter: blur(5px);
     border: 3px solid #930000;
 }
 #text{
-    margin:0 25px;
+    width: 70%;
 }
 #footer{
+    width: 100%;
+    height: 100px;
     display: flex;
     flex-direction: row;
+    border-top:5px solid #930000;
 }
 #footer-side{
-    width:10%;
-    height: 80px;
-    border-top:3px solid #930000;
-    border-right: 3px solid #930000;
+    width:12%;
+    border-right: 5px solid #930000;
 }
 #info{
-    width: 90%;
+    width: 76%;
     color: #930000;
     text-align: center;
-    border-top:3px solid #930000;
 }

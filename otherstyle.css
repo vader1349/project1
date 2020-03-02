@@ -1,0 +1,30 @@
+#slide{
+    display: flex;
+    flex-direction: column;
+}
+#error{
+    font-size:8em;
+    margin:0;
+}
+#message{
+    font-size: 3em;
+    margin:0;
+}
+#info{
+    width: 100%;
+}
+table{
+    font-size: large;
+}
+#button{
+    width: 100px;
+    height: 40px;
+    border-left: 3px solid #930000;
+    text-align: center;
+    font-size: 2em;
+}
+#button:hover{
+    background-color: #930000;
+    color: white;
+    cursor: pointer;
+}
