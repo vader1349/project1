@@ -3,13 +3,14 @@
     <head>
         <title>The Court</title>
         <link href="template.css" rel="stylesheet" type="text/css"/>
-        <link href="otherstyle.css" rel="stylesheet" type="text/css"/>
+        <link href="contactstyle.css" rel="stylesheet" type="text/css"/>
         <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     </head>
     <script src="animation.js"></script>
     <body>
         <div id="header">
-            <div id="header-pic"><img src="images/header.png" height="40px"/></div>
+            <div id="header-pic"><img src="images/header.jpg" height="40px"/></div>
             <div id="title">The Court</div>
             <div id="search-log-sign">
                 <input type="text" style="height:20px;width:200px"/>&nbsp;
@@ -34,14 +35,18 @@
             <a href="index.html">
                 <div class="menu-element">Home</div>
             </a>
-            <div class="menu-element">History</div>
+            <a href="history.html">
+                <div class="menu-element">History</div>
+            </a>
             <ul class="menu-element" onmouseover="display()" onmouseout="hide()">Bands
-                <li class="sub-element">Genesis</li>
-                <li class="sub-element">King Crimson</li>
-                <li class="sub-element">Pink Floyd</li>
-                <li class="sub-element">Yes</li>
+                <li class="sub-element" id="sub1">Genesis</li>
+                <li class="sub-element" id="sub2">King Crimson</li>
+                <li class="sub-element" id="sub3">Pink Floyd</li>
+                <li class="sub-element" id="sub4">Yes</li>
             </ul>
-            <div class="menu-element">News</div>
+            <a href="news.html">
+                <div class="menu-element">News</div>
+            </a>
             <a href="contact.html">
                 <div class="menu-element">Contact Us</div>
             </a>

@@ -1,14 +1,16 @@
 body{
     background-color: black;
     align-items: center;
-    font-family: fantasy;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
     color: #930000;
 }
 p{
     font-size:large;
 }
 a{
-    text-decoration: none
+    text-decoration: none;
+    color: #930000;
 }
 #header{
     display: flex;
@@ -39,6 +41,7 @@ a{
     align-items: center;
     width: 30px;
     height: 50px;
+    transition: 0.3s;
 }
 #search:hover{
     background-color: #930000;
@@ -49,13 +52,13 @@ a{
     justify-content: center;
     width:120px;
     height:50px;
-    font-family: fantasy;
     font-size:20px;
     color: #930000;
+    transition: 0.3s;
 }
 .log-sign:hover{
     background-color: #930000;
-    color: white;
+    color: wheat;
 }
 #slide{
     display: flex;
@@ -66,13 +69,15 @@ a{
     height:400px;
 }
 #menu{
-    position: absolute;
+    position: sticky;
+    top: 0;
     background-color: #930000;
     width: 100%;
     height:35px;
     z-index: 2;
 }
 .menu-element{
+    position: relative;
     float: left;
     background-color: black;
     margin: 0;
@@ -83,25 +88,37 @@ a{
     font-size:20px;
     text-align: center;
     color: #930000;
+    transition: 0.3s;
 }
 .menu-element:hover{
     background-color: #930000;
-    color: white;
+    color: wheat;
 }
 .sub-element{
+    position: absolute;
     display: none;
-    border-top:3px;
     background-color: black;
-    width:120px;
+    width: 120px;
     height:30px;
+}
+#sub1{
+    top:30px;
+}
+#sub2{
+    top:60px;
+}
+#sub3{
+    top:90px;
+}
+#sub4{
+    top:120px;
 }
 .sub-element:hover{
     background-color: #930000;
-    color: white;
+    color: wheat;
+    transition: 0.2s;
 }
 #main{
-    position: relative;
-    top: 35px;
     z-index: 1;
 }
 #body{
@@ -110,24 +127,34 @@ a{
     background-color: black;
     width:100%;
 }
-#side{
+.side{
     width:12%;
     border-right: 5px solid #930000;
 }
-#content{
+.content{
     width: 76%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.3s;
+}
+.content:hover{
+    color: wheat;
 }
 span{
     font-size: 2em;
 }
 .pic{
+    margin-left:5px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding:5px 0;
+    justify-content: space-around;
+}
+.show{
+    width: 24.5%;
+    height: auto;
+    border: 3px solid transparent;
+    transition: 0.3s;
 }
 .show:hover{
     filter: blur(5px);

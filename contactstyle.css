@@ -13,6 +13,9 @@
 #info{
     width: 100%;
 }
+#footer{
+    border: 0;
+}
 table{
     font-size: large;
 }
@@ -22,9 +25,10 @@ table{
     border-left: 3px solid #930000;
     text-align: center;
     font-size: 2em;
+    transition: 0.3s;
 }
 #button:hover{
     background-color: #930000;
-    color: white;
+    color: wheat;
     cursor: pointer;
 }

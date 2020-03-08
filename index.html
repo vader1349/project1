@@ -4,11 +4,12 @@
         <title>The Court</title>
         <link href="template.css" rel="stylesheet" type="text/css"/>
         <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
     </head>
     <script src="animation.js"></script>
     <body>
         <div id="header">
-            <div id="header-pic"><img src="images/header.png" height="40px"/></div>
+            <div id="header-pic"><img src="images/header.jpg" height="40px" title="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)"/></div>
             <div id="title">The Court</div>
             <div id="search-log-sign">
                 <input type="text" style="height:20px;width:200px"/>&nbsp;
@@ -32,27 +33,31 @@
             <a href="index.html">
                 <div class="menu-element">Home</div>
             </a>
-            <div class="menu-element">History</div>
+            <a href="history.html">
+                <div class="menu-element">History</div>
+            </a>
             <ul class="menu-element" onmouseover="display()" onmouseout="hide()">Bands
-                <li class="sub-element">Genesis</li>
-                <li class="sub-element">King Crimson</li>
-                <li class="sub-element">Pink Floyd</li>
-                <li class="sub-element">Yes</li>
+                <li class="sub-element" id="sub1">Genesis</li>
+                <li class="sub-element" id="sub2">King Crimson</li>
+                <li class="sub-element" id="sub3">Pink Floyd</li>
+                <li class="sub-element" id="sub4">Yes</li>
             </ul>
-            <div class="menu-element">News</div>
+            <a href="news.html">
+                <div class="menu-element">News</div>
+            </a>
             <a href="contact.html">
                 <div class="menu-element">Contact Us</div>
             </a>
         </div>
         <div id="main">
             <div id="body">
-                <div id="side"></div>
-                <div id="content">
+                <div class="side"></div>
+                <div class="content">
                     <div class="pic">
-                        <img class="show" src="images/pic1.jpg" width="24.5%">
-                        <img class="show" src="images/pic2.jpg" width="24.5%">
-                        <img class="show" src="images/pic3.jpg" width="24.5%">
-                        <img class="show" src="images/pic4.jpg" width="24.5%">
+                        <img class="show" src="images/pic1.jpg" title="Attribution: tony morelli / CC BY-SA (https://creativecommons.org/licenses/by-sa/2.0)">
+                        <img class="show" src="images/pic2.jpg" title="Attribution: deep_schismic / CC BY (https://creativecommons.org/licenses/by/2.0)">
+                        <img class="show" src="images/pic3.jpg" title="Attribution: Hunter Desportes / CC BY (https://creativecommons.org/licenses/by/2.0)">
+                        <img class="show" src="images/pic4.jpg" title="Attribution: Jim Summaria / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)">
                     </div>
                     <div id="text">
                         <h1>Welcome!</h1><br>
@@ -63,10 +68,10 @@
                             Enjoy your journey!</p>
                     </div><br><br><br>
                     <div class="pic">
-                        <img class="show" src="images/pic5.jpg" width="24.5%">
-                        <img class="show" src="images/pic6.jpg" width="24.5%">
-                        <img class="show" src="images/pic7.jpg" width="24.5%">
-                        <img class="show" src="images/pic8.jpg" width="24.5%">
+                        <img class="show" src="images/pic5.jpg" title="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)">
+                        <img class="show" src="images/pic6.jpg" title="Attribution: Brett Jordan / CC BY (https://creativecommons.org/licenses/by/2.0)">
+                        <img class="show" src="images/pic7.jpg" title="Attribution: cea / CC BY (https://creativecommons.org/licenses/by/2.0)">
+                        <img class="show" src="images/pic8.jpg" title="Attribution: el_silver / CC BY (https://creativecommons.org/licenses/by/2.0)">
                     </div>
                 </div>
             </div>

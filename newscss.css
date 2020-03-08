@@ -1,0 +1,49 @@
+#footer-side{
+    border-left: 5px solid #930000;
+    border-right: 0;
+}
+#side{
+    border-left: 5px solid #930000;
+    border-right:0 ;
+    width: 12%;
+}
+#content{
+    width: 88%;
+}
+.news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 85%;
+    margin:10px 10px 10px 13.7%;
+    border: 3px solid black;
+    color: #930000;
+    transition: 0.3s;
+}
+.news-image{
+    width: 20%;
+    height: auto;
+    margin: 3px;
+}
+h1{
+    margin: 0;
+}
+.news-intro{
+    width: 70%;
+    height: 90%;
+    font-size: large;
+}
+.news:hover{
+    border: 3px solid #930000;
+}
+.news:hover>.news-intro{
+    text-decoration: underline #930000;
+}
+span{
+    float: right;
+    font-size: 15px;
+}
+#info{
+    width: 88%;
+}

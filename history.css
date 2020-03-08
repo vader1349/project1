@@ -1,0 +1,34 @@
+#body{
+    flex-direction: column;
+}
+.catalog{
+    display:flex;
+    flex-direction: row;
+}
+.side{
+    font-size: 20px;
+    text-align: center;
+}
+.tag{
+    position: sticky;
+    top: 35px;
+    border: 10px solid black;
+    transition: 0.3s;
+}
+.tag:hover{
+    background-color: #930000;
+    color: wheat;
+}
+.content{
+    align-items: flex-start;
+    border: 5px solid transparent;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #930000;
+    font-weight: normal;
+}
+.content:hover{
+    color: wheat;
+}
+#citation{
+    border-bottom: 0;
+}
