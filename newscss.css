@@ -36,6 +36,7 @@ h1{
 }
 .news:hover{
     border: 3px solid #930000;
+    color: wheat;
 }
 .news:hover>.news-intro{
     text-decoration: underline #930000;

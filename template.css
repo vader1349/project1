@@ -136,10 +136,6 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.3s;
-}
-.content:hover{
-    color: wheat;
 }
 span{
     font-size: 2em;
@@ -162,6 +158,10 @@ span{
 }
 #text{
     width: 70%;
+    transition: 0.3s;
+}
+#text:hover{
+    color: wheat;
 }
 #footer{
     width: 100%;
