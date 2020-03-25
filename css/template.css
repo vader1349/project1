@@ -27,6 +27,7 @@ body{
 #show-pic{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 80%;
 }
 #big-pic{
