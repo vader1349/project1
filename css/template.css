@@ -335,6 +335,7 @@ span{
     }
     #show-pic{
         margin-top: 10vh;
+        height: auto;
     }
     #big-pic{
         max-width: 90vw;
