@@ -15,6 +15,7 @@ body{
     z-index: 10;
     display: none;
     flex-direction: column;
+    justify-content: flex-start;
 }
 #close{
     display: flex;
@@ -331,9 +332,10 @@ span{
     }
     #close img{
         width: 30px;
+        height: 30px;
     }
     #show-pic{
-        margin-top: 30vh;
+        margin-top: 10vh;
     }
     #big-pic{
         max-width: 90vw;
