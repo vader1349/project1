@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Court</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="css/template.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bandstyle.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+        <script src="js/animation.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <div id="overlay">
+            <div id="close">
+                <img src="images/close.png" width="80" onclick="hideOverLay();" alt="Close">
+            </div>
+            <div id="show-pic">
+                <img id="big-pic" src="images/close.png" alt="Big Picture">
+            </div>
+        </div>
+        <div id="header">
+            <div id="header-pic"><img src="images/header.jpg" alt="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)"/></div>
+            <div id="title">The Court</div>
+            <div id="search-log-sign">
+                <div id="search">
+                    <input type="text" style="height:20px;width:200px"/>&nbsp;
+                    <div id="search-icon">
+                        <a href="error.html">
+                            <img id="sicon" src="images/search1.png" height="30" onmouseout="restore();" onmouseover="replace();" alt="Search"/>
+                        </a>
+                    </div>
+                </div>
+                <div id="service">
+                    <a href="signin.html">
+                        <div class="log-sign">Sign in</div>
+                    </a>
+                    <a href="login.html">
+                        <div class="log-sign">Log in</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="slide">
+            <div id="left" onclick="prev();">
+                <img src="images/left.png" width="50" alt="Left">
+            </div>
+            <div id="pics">
+                <img class="slide-pic" id="slide-pic1" src="images/kingcrimson-logo.png" height="390" alt="Attribution: Steve Ball / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" onclick="showPic(this);"/>
+                <img class="slide-pic" id="slide-pic2" src="images/slide3.jpg" height="390" alt="Attribution: Mattia Rossetti / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" onclick="showPic(this);"/> 
+            </div>
+            <div id="right" onclick="next();">
+                <img src="images/right.png" width="50" alt="Right">
+            </div>
+        </div>
+        <div id="menu">
+            <a href="index.html">
+                <div class="menu-element">Home</div>
+            </a>
+            <a href="history.html">
+                <div class="menu-element">History</div>
+            </a>
+            <ul class="menu-element" onmouseover="display()" onmouseout="hide()">
+                <li>Bands</li>
+                <li class="sub-element" id="sub1"><a href="genesis.html">Genesis</a></li>
+                <li class="sub-element" id="sub2"><a href="kingcrimson.html">King Crimson</a></li>
+                <li class="sub-element" id="sub3"><a href="pinkfloyd.html">Pink Floyd</a></li>
+                <li class="sub-element" id="sub4"><a href="yes.html">Yes</a></li>
+            </ul>
+            <a href="news.html">
+                <div class="menu-element">News</div>
+            </a>
+            <a href="contact.html">
+                <div class="menu-element">Contact Us</div>
+            </a>
+        </div>
+        <div id="main">
+            <div id="body">
+                <div class="catalog">
+                    <div class="side">
+                        <div class="tag">Introduction &gt;</div>
+                    </div>
+                    <div class="content">
+                        <h1>Introduction</h1>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;King Crimson is a magical prog rock band founded in 1969. Their style fused rock & roll, 
+                            jazz, classical music and experimental music. Once formed, it won a high reputation with the legendary album "In 
+                            the Court of the Crimson King", which is considered the first mature prog rock studio album. King Crimson 
+                            has reached its highest point of prog rock music since it was formed. In its long-lasted music career, King 
+                            Crimson has been adjusted several and even amlost disbanded. However, King Crimson still keeps their bizarre 
+                            experiments on progressive music.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;King Crimson have been influential both on the early 1970s prog rock movement and 
+                            numerous contemporary artists. Its influence extends to many bands from various genres, especially the development 
+                            of progressive metal in 1990s and 2000s.</p>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <div class="side">
+                        <div class="tag">Members &gt;</div>
+                    </div>
+                    <div class="content">
+                        <h1>Members</h1>
+                        <h2>Current members</h2>
+                        <p>Robert Fripp<br>
+                        Active: 1969–1974, 1981–1984, 1994–2004, 2007–2008, 2013–present<br>
+                        Instruments: guitar, keyboards, mellotron, electronics<br></p>
+                        <p>Mel Collins<br>
+                        Active: 1970–1972, 2013–present<br>
+                        Instruments: saxophones, flute, bass flute, mellotron, backing vocals<br></p>
+                        <p>Tony Levin<br>
+                        Active: 1981–1984, 1994–1998, 2003–2004, 2007–2008, 2013–present<br>
+                        Instruments:bass, Chapman stick, synthesisers, backing vocals<br></p>
+                        <p>Pat Mastelotto<br>
+                        Active: 1994–2004, 2007–2008, 2013–present<br>
+                        Instruments: drums, percussion, programming<br></p>
+                        <p>Gavin Harrison<br>
+                        Active: 2007–2008, 2013–present<br>
+                        Instruments: drums, percussion<br></p>
+                        <p>Jakko Jakszyk<br>
+                        Active: 2013–present<br>
+                        Instruments: lead vocals, guitar, flute, keyboards<br></p>
+                        <p>Bill Rieflin<br>
+                        Active: 2013–present, 2013–2016<br>
+                        Instruments: keyboards, synthesisers, mellotron, drums<br></p>
+                        <p>Jeremy Stacey<br>
+                        Active: 2016–present<br>
+                        Instruments: drums, keyboards<br></p>
+                        <h2>Past members</h2>
+                        <p>Greg Lake<br>
+                        Active: 1969–1970<br>
+                        Instruments: bass, lead vocals<br></p>
+                        <p>Ian McDonald<br>
+                        Active:	1969<br>	
+                        Instruments: saxophones, flut, eclarinet, bass clarinet, keyboards, mellotron, vibraphone, backing vocals<br></p>
+                        <p>Peter Sinfield<br>
+                        ACtive: 1969-1971<br>	
+                        Instruments: lyrics, light shows, synthesizer<br></p>
+                        <p>Gordon Haskell<br>
+                        Active: 1970<br>
+                        Instruments:basslead vocals<br></p>
+                        <p>Andy McCulloch<br>
+                        Active: 1970<br>
+                        Instruments: drums, Lizard<br></p>
+                        <p>Ian Wallace<br>
+                        Active: 1970–1972<br>
+                        Instruments: drums, percussion, backing vocals<br></p>
+                        <p>Raymond "Boz" Burrell<br>
+                        Active: 1971–1972<br>
+                        Instruments: basslead vocals<br></p>
+                        <p>Bill Bruford<br>	
+                        1972–1974, 1981–1984, 1994–1997<br>
+                        Instruments: drums, percussion<br></p>
+                        <p>John Wetton<br>
+                        Active: 1972–1974<br>
+                        Instruments:basslead vocals<br></p>
+                        <p>David Cross<br>
+                        Active: 1972–1974<br>
+                        Instruments: violin, viola, keyboards<br></p>
+                        <p>Jamie Muir<br>
+                        Active:	1972–1973<br>
+                        Instruments: percussion<br></p>
+                        <p>Adrian Belew<br>
+                        Active: 1981–1984, 1994–2004, 2007–2008<br>
+                        Instruments: guitar, lead vocals, occasional drums and percussion<br></p>
+                        <p>Trey Gunn<br>
+                        Active: 1994–2003<br>	
+                        Instruments:warr guitar, chapman stick, backing vocals, bass      
+                    </div>
+                    <img class="show2" src="images/kingcrimson.jpg" alt="Attribution: Montserrat Boix / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" onclick="showPic(this);">
+                </div>
+                <div class="catalog">
+                    <div class="side">
+                        <div class="tag">Iconic Album &gt;</div>
+                    </div>
+                    <div class="content">
+                        <h1>Iconic Album</h1>
+                        <h2>In the Court of the Crimson King</h2>
+                        <h3>Side one</h3>
+                        <p>1. 21st Century Schizoid Man	7:24</p>
+                        <p>2. I Talk to the Wind 6:04</p>
+                        <p>3. Epitaph 8:49</p>
+                        <h3>Side two</h3>
+                        <p>4. Moonchild 12:13</p>
+                        <p>5. The Court of the Crimson King 9:26</p>
+                    </div>
+                    <img class="show2" src="images/pic8.jpg" alt="Attribution: el_silver / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);">
+                </div>
+                <div class="catalog">
+                    <div class="side" id="citation-side">
+                        <div class="tag">Citation &gt;</div>
+                    </div>
+                    <div class="content" id="citation">
+                        <h1>Citation</h1>
+                        <p>Wikipedia contributors. (2020, March 3). In the Court of the Crimson King. In Wikipedia, The Free Encyclopedia. 
+                            Retrieved 05:45, March 13, 2020, from<p>
+                        <a href="https://en.wikipedia.org/w/index.php?title=In_the_Court_of_the_Crimson_King&oldid=943628020">
+                            &nbsp;&nbsp;&nbsp;&nbsp;https://en.wikipedia.org/w/index.php?title=In_the_Court_of_the_Crimson_King&oldid=943628020
+                        </a>
+                        <p>Wikipedia contributors. (2020, March 11). King Crimson. In Wikipedia, The Free Encyclopedia. Retrieved 
+                            05:40, March 13, 2020, from<p>
+                            <a href="https://en.wikipedia.org/w/index.php?title=King_Crimson&oldid=945113144">
+                                &nbsp;&nbsp;&nbsp;&nbsp;https://en.wikipedia.org/w/index.php?title=King_Crimson&oldid=945113144
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footer-side"></div>
+                <div id="info"><br><br><br>© 2020 Junfeng Dai&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.</div>
+            </div>
+        </div>
+    </body>
+</html>

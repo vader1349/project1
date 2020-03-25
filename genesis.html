@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Court</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="css/template.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bandstyle.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+        <script src="js/animation.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <div id="overlay">
+            <div id="close">
+                <img src="images/close.png" width="80" onclick="hideOverLay();" alt="Close">
+            </div>
+            <div id="show-pic">
+                <img id="big-pic" src="images/close.png" alt="Big Picture">
+            </div>
+        </div>
+        <div id="header">
+            <div id="header-pic"><img src="images/header.jpg" alt="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)"/></div>
+            <div id="title">The Court</div>
+            <div id="search-log-sign">
+                <div id="search">
+                    <input type="text" style="height:20px;width:200px"/>&nbsp;
+                    <div id="search-icon">
+                        <a href="error.html">
+                            <img id="sicon" src="images/search1.png" height="30" onmouseout="restore();" onmouseover="replace();" alt="Search"/>
+                        </a>
+                    </div>
+                </div>
+                <div id="service">
+                    <a href="signin.html">
+                        <div class="log-sign">Sign in</div>
+                    </a>
+                    <a href="login.html">
+                        <div class="log-sign">Log in</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="slide">
+            <div id="left" onclick="prev();">
+                <img src="images/left.png" width="50" alt="Left">
+            </div>
+            <div id="pics">
+                <img class="slide-pic" id="slide-pic1" src="images/genesis-logo.png" height="390" alt="Attribution: Public domain" onclick="showPic(this);"/>
+                <img class="slide-pic" id="slide-pic2" src="images/slide4.jpg" height="390" alt="Attribution: Hunter Desportes / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);"/> 
+            </div>
+            <div id="right" onclick="next();">
+                <img src="images/right.png" width="50" alt="Right">
+            </div>
+        </div>
+        <div id="menu">
+            <a href="index.html">
+                <div class="menu-element">Home</div>
+            </a>
+            <a href="history.html">
+                <div class="menu-element">History</div>
+            </a>
+            <ul class="menu-element" onmouseover="display()" onmouseout="hide()">
+                <li>Bands</li>
+                <li class="sub-element" id="sub1"><a href="genesis.html">Genesis</a></li>
+                <li class="sub-element" id="sub2"><a href="kingcrimson.html">King Crimson</a></li>
+                <li class="sub-element" id="sub3"><a href="pinkfloyd.html">Pink Floyd</a></li>
+                <li class="sub-element" id="sub4"><a href="yes.html">Yes</a></li>
+            </ul>
+            <a href="news.html">
+                <div class="menu-element">News</div>
+            </a>
+            <a href="contact.html">
+                <div class="menu-element">Contact Us</div>
+            </a>
+        </div>
+        <div id="main">
+            <div id="body">
+                <div class="catalog">
+                    <div class="side">
+                        <div class="tag">Introduction &gt;</div>
+                    </div>
+                    <div class="content">
+                        <h1>Introduction</h1>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Genesis is a British prog rock band, formed in 1967, when Tony Banks 
+                        and Peter Gabriel were both enrolled at Charterhouse School. Genesis was initially formed 
+                        by the merger of two different groups: The Garden Wall (Banks, Gabriel) and Anon (Lutherford, Phillips). 
+                        The name of the group was determined by baptism, and their agent was Jonathan King and then Tony 
+                        Stratton-Smith. In the 70's, 80's and 90's, Genesis was quite successful. Their evergreen years 
+                        are comparable to legendary English rock bands like the Rolling Stones and the kinks.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Their works includes fifteen studio and six live albums, numerous of which have won various 
+                        awards and nominations, including a Grammy Award for Best Concept Music Video with "Land of Confusion". They have 
+                        also inspired a number of bands to start their career and create their music. In 2010, Genesis were inducted into 
+                        the Rock and Roll Hall of Fame.</p>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <div class="side">
+                        <div class="tag">Members &gt;</div>
+                    </div>
+                    <div class="content">
+                        <h1>Members</h1>
+                        <h2>Current members</h2>
+                        <p>Tony Banks<br>
+                        Active: 1967–1998, 1999, 2000, 2006–2007, 2020–present<br>
+                        Instruments: keyboards, guitar (until 1979), backing vocals<br></p>
+                        <p>Mike Rutherford<br>
+                        Active: 1967–1998, 1999, 2000, 2006–2007, 2020–present<br>
+                        Instruments: bass, guitar, backing vocals<br></p>
+                        <p>Phil Collins<br>
+                        Active: 1970–1996, 1999, 2000, 2006–2007, 2020–present<br>
+                        Instruments: drums, percussion, lead (from 1975) & backing vocals<br></p>
+                        <h2>Past members</h2>
+                        <p>Peter Gabriel<br>
+                        Active: 1967–1975, 1978, 1982, 1999<br>
+                        Instruments: lead vocals, flute, percussion<br></p>
+                        <p>Anthony Phillips<br>
+                        Active: 1967–1970<br>
+                        Instrument: guitar, backing vocals<br></p>
+                        <p>Chris Stewart<br>
+                        Active: 1967–1968<br>
+                        Instruments: drums, percussion<br></p>
+                        <p>John Silver<br>
+                        Active: 1968–1969<br>
+                        Instruments: drums, percussion<br></p>
+                        <p>John Mayhew<br>
+                        Active: 1969–1970; died 2009<br>
+                        Instruments: drums, percussion, backing vocals<br></p>
+                        <p>Mick Barnard<br>
+                        Active: 1970–1971<br>
+                        Instrument: guitar<br></p>
+                        <p>Steve Hackett<br>
+                        Active: 1971–1977, 1982, 1999<br>
+                        Instrument: guitar<br></p>
+                        <p>Ray Wilson<br>
+                        Active: 1996–1998<br>
+                        Instrument: lead vocals<br></p>
+                    </div>
+                    <img class="show2" src="images/genesis.jpg" alt="Attribution: Andrew Bossi / CC BY-SA (https://creativecommons.org/licenses/by-sa/2.5)" onclick="showPic(this);">
+                </div>
+                <div class="catalog">
+                    <div class="side">
+                        <div class="tag">Iconic Album &gt;</div>
+                    </div>
+                    <div class="content">
+                        <h1>Iconic Album</h1>
+                        <h2>Selling England by the Pound</h2>
+                        <h3>Side one</h3>
+                        <p>1. Dancing with the Moonlit Knight 8:02</p>
+                        <p>2. I Know What I Like (In Your Wardrobe)	4:03</p>
+                        <p>3. Firth of Fifth 9:36</p>
+                        <p>4. More Fool Me 3:10</p>
+                        <h3>Side two</h3>
+                        <p>1. The Battle of Epping Forest 11:43</p>
+                        <p>2. After the Ordeal (instrumental) 4:07</p>
+                        <p>3. The Cinema Show 11:10</p>
+                        <p>4. Aisle of Plenty 1:30</p>
+                    </div>
+                    <img class="show2" src="images/pic5.jpg" alt="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);">
+                </div>
+                <div class="catalog">
+                    <div class="side" id="citation-side">
+                        <div class="tag">Citation &gt;</div>
+                    </div>
+                    <div class="content" id="citation">
+                        <h1>Citation</h1>
+                        <p>Wikipedia contributors. (2020, March 3). Selling England by the Pound. In Wikipedia, The Free 
+                        Encyclopedia. Retrieved 06:12, March 11, 2020, from <p>
+                        <a href="https://en.wikipedia.org/w/index.php?title=Selling_England_by_the_Pound&oldid=943774538">
+                            &nbsp;&nbsp;&nbsp;&nbsp;https://en.wikipedia.org/w/index.php?title=Selling_England_by_the_Pound&oldid=943774538
+                        </a>
+                        <p>Wikipedia contributors. (2020, March 11). Genesis (band). In Wikipedia, The Free Encyclopedia. 
+                            Retrieved 21:20, March 12, 2020, from <p>
+                            <a href="https://en.wikipedia.org/w/index.php?title=Genesis_(band)&oldid=945060793">
+                                &nbsp;&nbsp;&nbsp;&nbsp;https://en.wikipedia.org/w/index.php?title=Genesis_(band)&oldid=945060793
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footer-side"></div>
+                <div id="info"><br><br><br>© 2020 Junfeng Dai&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.</div>
+            </div>
+        </div>
+    </body>
+</html>

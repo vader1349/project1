@@ -1,12 +1,13 @@
 #slide{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 #error{
     font-size:8em;
     margin:0;
 }
-#message{
+#sad{
     font-size: 3em;
     margin:0;
 }
@@ -31,4 +32,12 @@ table{
     background-color: #930000;
     color: wheat;
     cursor: pointer;
+}
+@media (max-width: 600px){
+    #slide{
+        height: 400px;
+    }
+    textarea{
+        width: 70vw;
+    }
 }

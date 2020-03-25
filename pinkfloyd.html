@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Court</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="css/template.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bandstyle.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+        <script src="js/animation.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    <body>
+        <div id="overlay">
+            <div id="close">
+                <img src="images/close.png" width="80" onclick="hideOverLay();" alt="Close">
+            </div>
+            <div id="show-pic">
+                <img id="big-pic" src="images/close.png" alt="Big Picture">
+            </div>
+        </div>
+        <div id="header">
+            <div id="header-pic"><img src="images/header.jpg" alt="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)"/></div>
+            <div id="title">The Court</div>
+            <div id="search-log-sign">
+                <div id="search">
+                    <input type="text" style="height:20px;width:200px"/>&nbsp;
+                    <div id="search-icon">
+                        <a href="error.html">
+                            <img id="sicon" src="images/search1.png" height="30" onmouseout="restore();" onmouseover="replace();" alt="Search"/>
+                        </a>
+                    </div>
+                </div>
+                <div id="service">
+                    <a href="signin.html">
+                        <div class="log-sign">Sign in</div>
+                    </a>
+                    <a href="login.html">
+                        <div class="log-sign">Log in</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="slide">
+            <div id="left" onclick="prev();">
+                <img src="images/left.png" width="50" alt="Left">
+            </div>
+            <div id="pics">
+                <img class="slide-pic" id="slide-pic1" src="images/pinkfloyd-logo.png" height="390" alt="Attribution: Public domain" onclick="showPic(this);"/>
+                <img class="slide-pic" id="slide-pic2" src="images/slide2.jpg" height="390" alt="Attribution: Hunter Desportes / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);"/> 
+            </div>
+            <div id="right" onclick="next();">
+                <img src="images/right.png" width="50" alt="Right">
+            </div>
+        </div>
+        <div id="menu">
+            <a href="index.html">
+                <div class="menu-element">Home</div>
+            </a>
+            <a href="history.html">
+                <div class="menu-element">History</div>
+            </a>
+            <ul class="menu-element" onmouseover="display()" onmouseout="hide()">
+                <li>Bands</li>
+                <li class="sub-element" id="sub1"><a href="genesis.html">Genesis</a></li>
+                <li class="sub-element" id="sub2"><a href="kingcrimson.html">King Crimson</a></li>
+                <li class="sub-element" id="sub3"><a href="pinkfloyd.html">Pink Floyd</a></li>
+                <li class="sub-element" id="sub4"><a href="yes.html">Yes</a></li>
+            </ul>
+            <a href="news.html">
+                <div class="menu-element">News</div>
+            </a>
+            <a href="contact.html">
+                <div class="menu-element">Contact Us</div>
+            </a>
+        </div>
+        <div id="main">
+            <div id="body">
+                <div class="catalog">
+                    <div class="side">
+                        <div class="tag">Introduction &gt;</div>
+                    </div>
+                    <div class="content">
+                        <h1>Introduction</h1>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Pink Floyd is an English rock band formed in London in 1965. It is a 
+                            representative band of the golden age of rock & roll and a banner of both prog rock and psychedelic 
+                            rock. It is one of the most commercially successful and influential bands in popular music history. 
+                            Its music has a tempting psychedelic temperament and a strong sense of social responsibility. Their live 
+                            performances are unique, often mobilizing various sensory media to help express the theme of the music, 
+                            giving the audience a diverse but vague intuition. The avant-garde music they created in the mid-1960s 
+                            was the pinnacle of psychedelic rock.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Their albums "Dark Side of the Moon" and "The Lost Wall", which were released 
+                            in the 1970s, became the classic of the generation. By 2013, they had sold more than 250 million records 
+                            worldwide, and “The Dark Side of the Moon” and “The Wall” becomes two of the best-selling albums of all time. 
+                            The band were inducted into the US Rock and Roll Hall of Fame in 1996.</p>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <div class="side">
+                        <div class="tag">Members &gt;</div>
+                    </div>
+                    <div class="content">
+                        <h1>Members</h1>
+                        <p>Syd Barrett<br>
+                        Active: 1965–1968<br>
+                        Instruments: lead and backing vocals, guitar<br></p>
+                        <p>David Gilmour<br>
+                        Active: 1967–1994, 2005 (Live 8 reunion concert), 2012–2014<br>
+                        Instruments: lead and backing vocals, guitar, occasional bass, keyboards, synthesizers, and drums<br></p>
+                        <p>Bob Klose<br> 
+                        Active: 1965<br></p>
+                        Instruments: guitar
+                        <p>Nick Mason<br>
+                        Active: 1965–1994, 2005, 2012–2014<br>
+                        Instruments: drums, percussion, tape effects, occasional vocals<br></p>
+                        <p>Roger Waters<br>
+                        Active: 1965–1985, 2005<br>
+                        Instruments: lead and backing vocals, bass, tape effects, occasional guitar, percussion, and synthesizers<br></p>
+                        <p>Richard Wright<br>
+                        Active: 1965–1979, 1990–1994, 2005<br>
+                        Instruments: backing and lead vocals, keyboards, synthesizers<br></p>
+                    </div>
+                    <img class="show2" src="images/pinkfloyd.jpg" alt="Attribution: Capitol Records / Public domain" onclick="showPic(this);">
+                </div>
+                <div class="catalog">
+                    <div class="side">
+                        <div class="tag">Iconic Album &gt;</div>
+                    </div>
+                    <div class="content">
+                        <h1>Iconic Album</h1>
+                        <h2>The Dark Side of the Moon</h2>
+                        <h3>Side one</h3>
+                        <p>1. Speak to Me 1:13</p>
+                        <p>2. Breathe 2:43</p>
+                        <p>3. On the Run 3:36</p>
+                        <p>4. Time 6:53</p>
+                        <p>5. The Great Gig in the Sky 4:36</p>
+                        <h3>Side two</h3>
+                        <p>1. Money 6:23</p>
+                        <p>2. Us and Them 7:49</p>
+                        <p>3. Any Colour You Like 3:26</p>
+                        <p>4. Brain Damage 3:49</p>
+                        <p>5. Eclipse 2:03</p>
+                    </div>
+                    <img class="show2" src="images/pic6.jpg" alt="Attribution: Brett Jordan / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);">
+                </div>
+                <div class="catalog">
+                    <div class="side" id="citation-side">
+                        <div class="tag">Citation &gt;</div>
+                    </div>
+                    <div class="content" id="citation">
+                        <h1>Citation</h1>
+                        <p>Wikipedia contributors. (2020, March 14). The Dark Side of the Moon. In Wikipedia, The Free Encyclopedia. Retrieved 
+                            00:11, March 15, 2020, from<p>
+                        <a href="https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon">
+                            &nbsp;&nbsp;&nbsp;&nbsp;https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon
+                        </a>
+                        <p>Wikipedia contributors. (2020, March 4). Pink Floyd. In Wikipedia, The Free Encyclopedia. Retrieved 00:05, March 15, 
+                            2020, from<p>
+                            <a href="https://en.wikipedia.org/w/index.php?title=Pink_Floyd&oldid=943849760">
+                                &nbsp;&nbsp;&nbsp;&nbsp;https://en.wikipedia.org/w/index.php?title=Pink_Floyd&oldid=943849760
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footer-side"></div>
+                <div id="info"><br><br><br>© 2020 Junfeng Dai&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.</div>
+            </div>
+        </div>
+    </body>
+</html>

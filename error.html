@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>The Court</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="template.css" rel="stylesheet" type="text/css"/>
-        <link href="contactstyle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/template.css" rel="stylesheet" type="text/css"/>
+        <link href="css/contactstyle.css" rel="stylesheet" type="text/css"/>
         <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png"/>
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="js/animation.js"></script>
     </head>
-    <script src="animation.js"></script>
     <body>
         <div id="header">
-            <div id="header-pic"><img src="images/header.jpg" height="40px"/></div>
+            <div id="header-pic"><img src="images/header.jpg" alt="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)"/></div>
             <div id="title">The Court</div>
             <div id="search-log-sign">
-                <input type="text" style="height:20px;width:200px"/>&nbsp;
                 <div id="search">
-                    <a href="error.html">
-                        <img id="search-icon" src="images/search1.png" height="30px" onmouseout="restore();" onmouseover="replace();"/>
+                    <input type="text" style="height:20px;width:200px"/>&nbsp;
+                    <div id="search-icon">
+                        <a href="error.html">
+                            <img id="sicon" src="images/search1.png" height="30" onmouseout="restore();" onmouseover="replace();" alt="Search"/>
+                        </a>
+                    </div>
+                </div>
+                <div id="service">
+                    <a href="signin.html">
+                        <div class="log-sign">Sign in</div>
+                    </a>
+                    <a href="login.html">
+                        <div class="log-sign">Log in</div>
                     </a>
                 </div>
-                <a href="error.html">
-                    <div class="log-sign">Log in</div>
-                </a>
-                <a href="error.html">
-                    <div class="log-sign">Sign in</div>
-                </a>
             </div>
         </div>
         <div id="slide">
+            <img src="images/header.jpg" alt="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)" width="100"/>
             <p id="error">404</p>
-            <p id="message">Sad but Ture...</p>
+            <p id="sad">Sad but Ture...</p>
         </div>
         <div id="menu">
             <a href="index.html">
@@ -39,11 +45,12 @@
             <a href="history.html">
                 <div class="menu-element">History</div>
             </a>
-            <ul class="menu-element" onmouseover="display()" onmouseout="hide()">Bands
-                <li class="sub-element" id="sub1">Genesis</li>
-                <li class="sub-element" id="sub2">King Crimson</li>
-                <li class="sub-element" id="sub3">Pink Floyd</li>
-                <li class="sub-element" id="sub4">Yes</li>
+            <ul class="menu-element" onmouseover="display()" onmouseout="hide()">
+                <li>Bands</li>
+                <li class="sub-element" id="sub1"><a href="genesis.html">Genesis</a></li>
+                <li class="sub-element" id="sub2"><a href="kingcrimson.html">King Crimson</a></li>
+                <li class="sub-element" id="sub3"><a href="pinkfloyd.html">Pink Floyd</a></li>
+                <li class="sub-element" id="sub4"><a href="yes.html">Yes</a></li>
             </ul>
             <a href="news.html">
                 <div class="menu-element">News</div>

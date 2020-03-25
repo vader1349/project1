@@ -1,0 +1,56 @@
+#body{
+    flex-direction: column;
+}
+.catalog{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+}
+.side{
+    font-size: 20px;
+    text-align: center;
+}
+.tag{
+    position: sticky;
+    top: 35px;
+    border: 10px solid black;
+    transition: 0.3s;
+}
+.tag:hover{
+    background-color: #930000;
+    color: wheat;
+}
+.content{
+    align-items: flex-start;
+    border: 5px solid transparent;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #930000;
+    font-weight: normal;
+    transition: 0.3s;
+}
+.catalog img{
+    position: absolute;
+    left: 60%;
+    width: 25%;
+    top:20px;
+    text-align: center;
+    border: 2px solid #930000;
+}
+p{
+    transition: 0.3s;
+}
+p:hover{
+    color: wheat;
+}
+h1,h2{
+    color: wheat;
+}
+#citation{
+    border-bottom: 0;
+}
+#citation p{
+    margin: 0;
+}
+.content a:hover{
+    color:#930000;
+}

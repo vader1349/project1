@@ -20,7 +20,7 @@
                     <input type="text" style="height:20px;width:200px"/>&nbsp;
                     <div id="search-icon">
                         <a href="error.html">
-                            <img id="sicon" src="images/search1.png" width="30" onmouseout="restore();" onmouseover="replace();" alt="Search"/>
+                            <img id="sicon" src="images/search1.png" height="30" onmouseout="restore();" onmouseover="replace();" alt="Search"/>
                         </a>
                     </div>
                 </div>
@@ -38,15 +38,23 @@
             <img src="images/header.jpg" alt="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)" width="100"/>
             <table>
                 <tr>
+                    <td>Username:</td>
+                    <td><textarea id="username" rows="1" cols="40"></textarea></td>
+                </tr>
+                <tr>
                     <td>E-mail:</td>
                     <td><textarea id="e-mail" rows="1" cols="40"></textarea></td>
                 </tr>
                 <tr>
-                    <td>Message:</td>
-                    <td><textarea id="message" rows="10" cols="40"></textarea></td>
+                    <td>Password:</td>
+                    <td><textarea id="password" rows="1" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Comfirm Password:</td>
+                    <td><textarea id="comfirm" rows="1" cols="40"></textarea></td>
                 </tr>
             </table><br>
-            <div id="button" onclick="contactCheck();">Submit</div>
+            <div id="button" onclick="signInCheck()">Sign In</div>
         </div>
         <div id="menu">
             <a href="index.html">

@@ -39,7 +39,7 @@ h1{
     color: wheat;
 }
 .news:hover>.news-intro{
-    text-decoration: underline #930000;
+    text-decoration: underline wheat;
 }
 span{
     float: right;
@@ -47,4 +47,15 @@ span{
 }
 #info{
     width: 88%;
+}
+@media (max-width: 600px){
+    #side{
+        display:none;
+    }
+    #content{
+        width: 100%;
+    }
+    .news{
+        margin: 5px;
+    }
 }

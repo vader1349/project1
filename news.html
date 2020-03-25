@@ -1,34 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>The Court</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="template.css" rel="stylesheet" type="text/css"/>
-        <link href="newscss.css" rel="stylesheet" type="text/css"/>
+        <link href="css/template.css" rel="stylesheet" type="text/css"/>
+        <link href="css/newsstyle.css" rel="stylesheet" type="text/css"/>
         <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png"/>
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-    <script src="animation.js"></script>
+        <script src="js/animation.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
     <body>
+        <div id="overlay">
+            <div id="close">
+                <img src="images/close.png" width="80" onclick="hideOverLay();" alt="Close">
+            </div>
+            <div id="show-pic">
+                <img id="big-pic" src="images/close.png" alt="Big Picture">
+            </div>
+        </div>
         <div id="header">
-            <div id="header-pic"><img src="images/header.jpg" height="40px"/></div>
+            <div id="header-pic"><img src="images/header.jpg" alt="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)"/></div>
             <div id="title">The Court</div>
             <div id="search-log-sign">
-                <input type="text" style="height:20px;width:200px"/>&nbsp;
                 <div id="search">
-                    <a href="error.html">
-                        <img id="search-icon" src="images/search1.png" height="30px" onmouseout="restore();" onmouseover="replace();"/>
+                    <input type="text" style="height:20px;width:200px"/>&nbsp;
+                    <div id="search-icon">
+                        <a href="error.html">
+                            <img id="sicon" src="images/search1.png" height="30" onmouseout="restore();" onmouseover="replace();" alt="Search"/>
+                        </a>
+                    </div>
+                </div>
+                <div id="service">
+                    <a href="signin.html">
+                        <div class="log-sign">Sign in</div>
+                    </a>
+                    <a href="login.html">
+                        <div class="log-sign">Log in</div>
                     </a>
                 </div>
-                <a href="error.html">
-                    <div class="log-sign">Log in</div>
-                </a>
-                <a href="error.html">
-                    <div class="log-sign">Sign in</div>
-                </a>
             </div>
         </div>
         <div id="slide">
-            <img src="images/slide1.png" height="390px"/>
+            <div id="left" onclick="prev();">
+                <img src="images/left.png" width="50" alt="Left">
+            </div>
+            <div id="pics">
+                <img class="slide-pic" id="slide-pic1" src="images/slide1.jpg" height="390" alt="Attribution: Paul Carless / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);"/> 
+                <img class="slide-pic" id="slide-pic2" src="images/slide2.jpg" height="390" alt="Attribution: Hunter Desportes / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);"/> 
+                <img class="slide-pic" id="slide-pic3" src="images/slide3.jpg" height="390" alt="Attribution: Mattia Rossetti / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" onclick="showPic(this);"/> 
+                <img class="slide-pic" id="slide-pic4" src="images/slide4.jpg" height="390" alt="Attribution: Hunter Desportes / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);"/> 
+            </div>
+            <div id="right" onclick="next();">
+                <img src="images/right.png" width="50" alt="Right">
+            </div>
         </div>
         <div id="menu">
             <a href="index.html">
@@ -37,11 +61,12 @@
             <a href="history.html">
                 <div class="menu-element">History</div>
             </a>
-            <ul class="menu-element" onmouseover="display()" onmouseout="hide()">Bands
-                <li class="sub-element" id="sub1">Genesis</li>
-                <li class="sub-element" id="sub2">King Crimson</li>
-                <li class="sub-element" id="sub3">Pink Floyd</li>
-                <li class="sub-element" id="sub4">Yes</li>
+            <ul class="menu-element" onmouseover="display()" onmouseout="hide()">
+                <li>Bands</li>
+                <li class="sub-element" id="sub1"><a href="genesis.html">Genesis</a></li>
+                <li class="sub-element" id="sub2"><a href="kingcrimson.html">King Crimson</a></li>
+                <li class="sub-element" id="sub3"><a href="pinkfloyd.html">Pink Floyd</a></li>
+                <li class="sub-element" id="sub4"><a href="yes.html">Yes</a></li>
             </ul>
             <a href="news.html">
                 <div class="menu-element">News</div>
@@ -55,7 +80,7 @@
                 <div id="content">
                     <a href="https://www.jambase.com/article/david-gilmour-birthday-pink-floyd-live-melbourne-1988" target="_blank">
                         <div class="news">
-                            <img class="news-image" src="images/news-image1.jpg" title="Attribution: Jimmy Baikovicius from Montevideo, Uruguay / CC BY-SA (https://creativecommons.org/licenses/by-sa/2.0)">
+                            <img class="news-image" src="images/news-image1.jpg" alt="Attribution: Jimmy Baikovicius from Montevideo, Uruguay / CC BY-SA (https://creativecommons.org/licenses/by-sa/2.0)">
                                 <div class="news-intro">
                                     <h1>Happy Birthday David Gilmour: Pink Floyd Live In Melbourne 1988</h1>
                                     David Gilmour celebrates his 74th birthday today. 
@@ -70,7 +95,7 @@
                     </a>
                     <a href="https://www.jambase.com/article/king-crimson-zappa-tour-2020-summer" target="_blank">
                         <div class="news">
-                            <img class="news-image" src="images/news-image2.jpg" title="Attribution: Steve Ball / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)">
+                            <img class="news-image" src="images/news-image2.jpg" alt="Attribution: Steve Ball / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)">
                                 <div class="news-intro">
                                     <h1>King Crimson & Zappa Band Announce North American Summer Tour 2020</h1>
                                         This summer, King Crimson and an ensemble consisting of alumni 
@@ -85,7 +110,7 @@
                     </a>
                     <a href="https://www.loudersound.com/news/yes-guitarist-steve-howe-jon-anderson-and-i-get-on-really-well-now" target="_blank">
                         <div class="news">
-                            <img class="news-image" src="images/news-image3.jpg" title="Attribution: ocad123 from Toronto, Ontario, Canada / CC BY-SA (https://creativecommons.org/licenses/by-sa/2.0)">
+                            <img class="news-image" src="images/news-image3.jpg" alt="Attribution: ocad123 from Toronto, Ontario, Canada / CC BY-SA (https://creativecommons.org/licenses/by-sa/2.0)">
                                 <div class="news-intro">
                                     <h1>Yes guitarist Steve Howe: Jon Anderson and I get on really well now</h1>
                                     Steve Howe speaks exclusively to this month’s Classic Rock magazine 
@@ -97,7 +122,7 @@
                     </a>
                     <a href="https://www.cnn.com/2020/03/04/entertainment/genesis-reunion-intl-scli-gbr/index.html" target="_blank">
                         <div class="news">
-                            <img class="news-image" src="images/news-image4.jpg" title="Attribution: David Scheinmann / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)">
+                            <img class="news-image" src="images/news-image4.jpg" alt="Attribution: David Scheinmann / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)">
                                 <div class="news-intro">
                                     <h1>Rock band Genesis to reunite for first tour in 13 years</h1>
                                     Phil Collins, Tony Banks and Mike Rutherford made the announcement during an 

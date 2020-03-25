@@ -1,5 +1,6 @@
 #body{
     flex-direction: column;
+    font-size: large;
 }
 .catalog{
     display:flex;
@@ -8,6 +9,7 @@
 .side{
     font-size: 20px;
     text-align: center;
+    border-bottom:5px solid #930000;
 }
 .tag{
     position: sticky;
@@ -23,13 +25,20 @@
     align-items: flex-start;
     border: 5px solid transparent;
     padding-bottom: 10px;
-    border-bottom: 3px solid #930000;
     font-weight: normal;
+}
+p{
     transition: 0.3s;
 }
-.content:hover{
+p:hover{
     color: wheat;
 }
-#citation{
+h1,h3{
+    color: wheat;
+}
+#citation-side{
     border-bottom: 0;
+}
+.content a:hover{
+    color:#930000;
 }

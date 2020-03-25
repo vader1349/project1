@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>The Court</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="template.css" rel="stylesheet" type="text/css"/>
-        <link href="history.css" rel="stylesheet" type="text/css"/>
+        <link href="css/template.css" rel="stylesheet" type="text/css"/>
+        <link href="css/historystyle.css" rel="stylesheet" type="text/css"/>
         <link rel="icon" type="image/png" sizes="144x144" href="images/icon.png"/>
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="js/animation.js"></script>
     </head>
-    <script src="animation.js"></script>
     <body>
+        <div id="overlay">
+            <div id="close">
+                <img src="images/close.png" width="80" onclick="hideOverLay();" alt="Close">
+            </div>
+            <div id="show-pic">
+                <img id="big-pic" src="images/close.png" alt="Big Picture">
+            </div>
+        </div>
         <div id="header">
-            <div id="header-pic"><img src="images/header.jpg" height="40px" title="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)"/></div>
+            <div id="header-pic"><img src="images/header.jpg" alt="Attribution: Ian Burt / CC BY (https://creativecommons.org/licenses/by/2.0)"/></div>
             <div id="title">The Court</div>
             <div id="search-log-sign">
-                <input type="text" style="height:20px;width:200px"/>&nbsp;
                 <div id="search">
-                    <a href="error.html">
-                        <img id="search-icon" src="images/search1.png" height="30px" onmouseout="restore();" onmouseover="replace();"/>
+                    <input type="text" style="height:20px;width:200px"/>&nbsp;
+                    <div id="search-icon">
+                        <a href="error.html">
+                            <img id="sicon" src="images/search1.png" height="30" onmouseout="restore();" onmouseover="replace();" alt="Search"/>
+                        </a>
+                    </div>
+                </div>
+                <div id="service">
+                    <a href="signin.html">
+                        <div class="log-sign">Sign in</div>
+                    </a>
+                    <a href="login.html">
+                        <div class="log-sign">Log in</div>
                     </a>
                 </div>
-                <a href="error.html">
-                    <div class="log-sign">Log in</div>
-                </a>
-                <a href="error.html">
-                    <div class="log-sign">Sign in</div>
-                </a>
             </div>
         </div>
         <div id="slide">
-            <img src="images/slide1.png" height="390px"/>
+            <div id="left" onclick="prev();">
+                <img src="images/left.png" width="50" alt="Left">
+            </div>
+            <div id="pics">
+                <img class="slide-pic" id="slide-pic1" src="images/slide1.jpg" height="390" alt="Attribution: Paul Carless / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);"/> 
+                <img class="slide-pic" id="slide-pic2" src="images/slide2.jpg" height="390" alt="Attribution: Hunter Desportes / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);"/> 
+                <img class="slide-pic" id="slide-pic3" src="images/slide3.jpg" height="390" alt="Attribution: Mattia Rossetti / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" onclick="showPic(this);"/> 
+                <img class="slide-pic" id="slide-pic4" src="images/slide4.jpg" height="390" alt="Attribution: Hunter Desportes / CC BY (https://creativecommons.org/licenses/by/2.0)" onclick="showPic(this);"/> 
+            </div>
+            <div id="right" onclick="next();">
+                <img src="images/right.png" width="50" alt="Right">
+            </div>
         </div>
         <div id="menu">
             <a href="index.html">
@@ -38,11 +62,12 @@
             <a href="history.html">
                 <div class="menu-element">History</div>
             </a>
-            <ul class="menu-element" onmouseover="display()" onmouseout="hide()">Bands
-                <li class="sub-element" id="sub1">Genesis</li>
-                <li class="sub-element" id="sub2">King Crimson</li>
-                <li class="sub-element" id="sub3">Pink Floyd</li>
-                <li class="sub-element" id="sub4">Yes</li>
+            <ul class="menu-element" onmouseover="display()" onmouseout="hide()">
+                <li>Bands</li>
+                <li class="sub-element" id="sub1"><a href="genesis.html">Genesis</a></li>
+                <li class="sub-element" id="sub2"><a href="kingcrimson.html">King Crimson</a></li>
+                <li class="sub-element" id="sub3"><a href="pinkfloyd.html">Pink Floyd</a></li>
+                <li class="sub-element" id="sub4"><a href="yes.html">Yes</a></li>
             </ul>
             <a href="news.html">
                 <div class="menu-element">News</div>
@@ -55,227 +80,169 @@
             <div id="body">
                 <div class="catalog">
                     <div class="side">
-                        <div class="tag">Background and roots &gt;</div>
+                        <div class="tag">Brief Introduction &gt;</div>
                     </div>
                     <div class="content">
-                        <h1>Background and roots</h1>
-                        &nbsp;&nbsp;&nbsp;&nbsp;In 1966, the level of social and artistic correspondence among British and 
-                        American rock musicians dramatically accelerated for bands like the Beatles, 
-                        the Beach Boys and the Byrds who fused elements of cultivated music with the 
-                        vernacular traditions of rock. Progressive rock was predicated on the "progressive"
-                        pop groups from the 1960s who combined rock and roll with various other music styles such 
-                        as Indian ragas, oriental melodies and Gregorian chants, like the Beatles and the Yardbirds. 
-                        The Beatles' Paul McCartney said in 1967: "we got a bit bored with 12 bars all the time, 
-                        so we tried to get into something else. Then came Dylan, the Who, and the Beach Boys. ... We're 
-                        all trying to do vaguely the same kind of thing." Rock music started to take itself seriously, 
-                        paralleling earlier attempts in jazz (as swing gave way to bop, a move which did not succeed with 
-                        audiences). In this period, the popular song began signalling a new possible means of expression 
-                        that went beyond the three-minute love song, leading to an intersection between the "underground" 
-                        and the "establishment" for listening publics.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Hegarty and Halliwell identify the Beatles, the Beach Boys, the Doors, 
-                        the Pretty Things, the Zombies, the Byrds, the Grateful Dead and Pink Floyd "not merely as precursors 
-                        of prog but as essential developments of progressiveness in its early days". According to musicologist 
-                        Walter Everett, the Beatles' "experimental timbres, rhythms, tonal structures, and poetic texts" on their 
-                        albums Rubber Soul (1965) and Revolver (1966) "encouraged a legion of young bands that were to create 
-                        progressive rock in the early 1970s". Dylan's poetry, the Mothers of Invention's album Freak Out! 
-                        (1966) and the Beatles' Sgt. Pepper's Lonely Hearts Club Band (1967) were all important in progressive 
-                        rock's development. The productions of Phil Spector were key influences, as they introduced the 
-                        possibility of using the recording studio to create music that otherwise could never be achieved.
-                        The same is said for the Beach Boys' Pet Sounds (1966), which Brian Wilson intended as an 
-                        answer to Rubber Soul and which in turn influenced the Beatles when they made Sgt. Pepper.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Dylan introduced a literary element to rock through his fascination with 
-                        the Surrealists and the French Symbolists, and his immersion in the New York City art scene of the 
-                        early 1960s. The trend of bands with names drawn from literature, such as the Doors, Steppenwolf 
-                        and the Ides of March, were a further sign of rock music aligning itself with high culture. Dylan 
-                        also led the way in blending rock with folk music styles. This was followed by folk rock groups such 
-                        as the Byrds, who based their initial sound on that of the Beatles. In turn, the Byrds' vocal harmonies 
-                        inspired those of Yes, and British folk rock bands like Fairport Convention, who emphasised instrumental 
-                        virtuosity. Some of these artists, such as the Incredible String Band and Shirley and Dolly Collins, 
-                        would prove influential through their use of instruments borrowed from world music and early music.
+                        <h1>Brief Introduction</h1>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Progressive rock, sometimes simply referred to as prog rock. It is one of 
+                        the branches of rock music that emerged in the late 1960s. Its connotation is very complex and absorbs 
+                        many other features of other music genres, so it is hard to clearly define it in musicianship. The most 
+                        pinnacle of prog rock was in the early 1970s and it continues to this day. Prog rock originated in the 
+                        United Kingdom. Most of the groups appeared in Europe, and only a few bands came from the United States 
+                        and Canada. This style of this genre usually combines musical elements such as jazz, classical music, folk 
+                        music and world music, which is unlike American rock that is influenced by R & B and country music. After 
+                        years of evolution, prog rock has also developed many branches such as symphony rock, art rock, mathematical 
+                        rock, and prog metal.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Prog rock musicians intend to get rid of the formulation and constrains of popular 
+                        music genres, and strive to discover new possibilities of their own music, even if they often largely influenced 
+                        by classical music and jazz. The most unique part of prog rock is "complexity" in arrangement and narrative rather 
+                        than simply playing technique.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;There is no absolute definition of prog rock. Robert Fripp, the representative figure of the famous band King Cirmson, 
+                        hates this term in music classification. Most of the works that have constructed prog rock are concentrated in the 1970s, 
+                        such as: Jethro Tull, Yes, Genesis, Pink Floyd, Emerson, Lake & Palmer, Rush, Queen and King Crimson, have different 
+                        characteristics. These musicians and critics are questioning whether they really belong to prog rock. </p>
                     </div>
                 </div>
                 <div class="catalog">
                     <div class="side">
-                        <div class="tag">Proto-prog and psychedelia &gt;</div>
+                        <div class="tag">Proto-prog &gt;</div>
                     </div>
                     <div class="content">
-                        <h1>Proto-prog and psychedelia</h1>
-                        &nbsp;&nbsp;&nbsp;&nbsp;According to AllMusic: "Prog-rock began to emerge out of the British 
-                        psychedelic scene in 1967, specifically a strain of classical/symphonic rock led by the Nice, 
-                        Procol Harum, and the Moody Blues (Days of Future Passed)." The availability of newly 
-                        affordable recording equipment coincided with the rise of a London underground scene at 
-                        which LSD was commonly used. Pink Floyd and Soft Machine functioned as house bands at all-
-                        night events at locations such as Middle Earth and the UFO Club, where they experimented with 
-                        sound textures and long-form songs. Many psychedelic, folk rock and early progressive bands were 
-                        aided by exposure from BBC Radio 1 DJ John Peel. Jimi Hendrix, who rose to prominence in the 
-                        London scene and recorded with a band of English musicians, initiated the trend towards virtuosity 
-                        in rock music. The Scottish band 1-2-3, later renamed Clouds, were formed in 1966 and began performing 
-                        at London clubs a year later. According to Mojo's George Knemeyer: "some claim [that they] had a vital 
-                        influence on prog-rockers such as Yes, The Nice and Family."<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Symphonic rock artists in the late 1960s had some chart success, including the singles 
-                        "Nights in White Satin" (the Moody Blues, 1967) and "A Whiter Shade of Pale" (Procol Harum, 1967). 
-                        The Moody Blues established the popularity of symphonic rock when they recorded Days of Future 
-                        Passed together with the London Festival Orchestra, and Procol Harum began to use a greater variety 
-                        of acoustic instruments, particularly on their 1969 album A Salty Dog. Classical influences sometimes 
-                        took the form of pieces adapted from or inspired by classical works, such as Jeff Beck's "Beck's Bolero" 
-                        and parts of the Nice's Ars Longa Vita Brevis. The latter, along with such Nice tracks as "Rondo" and 
-                        "America", reflect a greater interest in music that is entirely instrumental. Sgt. Pepper's and Days 
-                        both represent a growing tendency towards song cycles and suites made up of multiple movements.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Several bands that included jazz-style horn sections appeared, including Blood, 
-                        Sweat & Tears and Chicago. Of these, Martin highlights Chicago in particular for their experimentation with 
-                        suites and extended compositions, such as the "Ballet for a Girl in Buchannon" on Chicago II. Jazz influences 
-                        appeared in the music of British bands such as Traffic, Colosseum and If, together with Canterbury scene 
-                        bands such as Soft Machine and Caravan. Canterbury scene bands emphasised the use of wind instruments, 
-                        complex chord changes and long improvisations. Martin writes that in 1968, "full-blown progressive rock" 
-                        was not yet in existence, but three bands released albums who would later come to the forefront of the music: 
-                        Jethro Tull, Caravan and Soft Machine.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;The term "progressive rock", which appeared in the liner notes of Caravan's 1968 
-                        self-titled debut LP, came to be applied to bands that used classical music techniques to expand the styles 
-                        and concepts available to rock music. The Nice, the Moody Blues, Procol Harum and Pink Floyd all 
-                        contained elements of what is now called progressive rock, but none represented as complete an example of the 
-                        genre as several bands that formed soon after. Almost all of the genre's major bands, including Jethro Tull, 
-                        King Crimson, Yes, Genesis, Van der Graaf Generator, ELP, Gentle Giant and Renaissance, released their debut 
-                        albums during the years 1968–1970. Most of these were folk-rock albums that gave little indication of what 
-                        the band's mature sound would become, but King Crimson's In the Court of the Crimson King (1969) was a fully 
-                        formed example of the genre. Critics assumed the album to be the logical extension and development of late 
-                        1960s work exemplified by the Moody Blues, Procol Harum, Pink Floyd and the Beatles. According to Macan, 
-                        the album may be the most influential to progressive rock for crystallising the music of earlier bands "into 
-                        a distinctive, immediately recognizable style".
+                        <h1>Proto-prog (1967-1969)</h1>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Although the music of this era listed blow is not strictly prog rock, their experiments 
+                        in the field of music have directly brought the musicianship of rock to a new level. During this period, the 
+                        bands have done many breakthrough experiments on the combination of sound processing, instrumental performance, 
+                        new recording technology and diversified music styles, which has gradually inspired prog rock.</p>
+                        <h3>1. The Beatles - Sgt Pepper's Lonely Hearts Club Band (1967)</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Beatles is a great band because their contributions to rock are incomparable. Their 
+                        experiments on rock have never stopped. This is a psychedelic and a well-known rock album.</p>
+                        <h3>2. Pink Floyd - The Piper at the Gates of Dawn (1967)</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Pink Floyd is the originator of psychedelic rock, one of the founding bands of 
+                            prog rock. This is Pink Floyd's first album, which means the beginning of the psychedelic rock era.</p> 
+                        <h3>3. The Moody Blues - Days of Future Passed (1967)</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;This album is a combination of psychedelic rock and symphony. It is made collaboratively 
+                            by Moody Blues and the London Philharmonic Orchestra. This is a work that cannot be style-oriented 
+                            at the time, a mixed product.</p>
+                        <h3>4. Caravan - Caravan (1968)</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;This is also an important band. They and Soft Machine established the Canterbury 
+                            classification in Prog Rock. The album mixes Jazz elements and psychedelic rock, and for the first time, 
+                            the important idea of conceptual in album composition is put forward.</p>
+                        <h3>5. Giles Giles & Fripp - The Cheerful Insanity of Giles Giles & Fripp (1968)</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;This album is not mature enough to be a good album or a fundation of a music genre, but it is the very 
+                            start of King Crimson's legendary giutarist Robert Fripp's career.</p>
                     </div>
                 </div>
                 <div class="catalog">
                     <div class="side">
-                        <div class="tag">Peak years (1971–76) &gt;</div>
+                        <div class="tag">Peak Years &gt;</div>
                     </div>
                     <div class="content">
-                        <h1>Peak years (1971–76)</h1>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Most of the genre's major bands released their most critically acclaimed albums 
-                        during the years 1971–1976. The genre experienced a high degree of commercial success during the early 
-                        1970s. Jethro Tull, ELP, Yes and Pink Floyd combined for four albums that reached number one in the US charts, 
-                        and sixteen of their albums reached the top ten. Mike Oldfield's Tubular Bells (1973), an excerpt of which was 
-                        used as the theme for the film The Exorcist, sold 16 million copies.<br>
-                         &nbsp;&nbsp;&nbsp;&nbsp;Progressive rock came to be appreciated overseas, but it mostly remained a European, 
-                         and especially British, phenomenon. Few American bands engaged in it, and the purest representatives of the 
-                         genre, such as Starcastle and Happy the Man, remained limited to their own geographic regions. This is at 
-                         least in part due to music industry differences between the US and Great Britain. Cultural factors were also 
-                         involved, as US musicians tended to come from a blues background, while Europeans tended to have a foundation 
-                         in classical music. North American progressive rock bands and artists often represented hybrid styles such as 
-                         the complex arrangements of Rush, the hard rock of Captain Beyond, the Southern rock-tinged prog of Kansas, 
-                         the jazz fusion of Frank Zappa and Return to Forever, and the eclectic fusion of the all-instrumental Dixie 
-                         Dregs. British progressive rock acts had their greatest US success in the same geographic areas in which 
-                         British heavy metal bands experienced their greatest popularity. The overlap in audiences led to the success 
-                         of arena rock bands, such as Boston, Kansas, and Styx, who combined elements of the two styles.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Progressive rock achieved popularity in Continental Europe more quickly than it did 
-                        in the US. Italy remained generally uninterested in rock music until the strong Italian progressive rock scene 
-                        developed in the early 1970s. Few of the European groups were successful outside of their own countries, with 
-                        the exceptions of bands like Focus, who wrote English-language lyrics, and Le Orme and PFM, whose English lyrics 
-                        were written by Peter Hammill and Peter Sinfield, respectively. Some European bands played in a style derivative 
-                        of English bands. The "Kosmische music" scene in Germany came to be labelled as "krautrock" internationally and is 
-                        variously seen as part of the progressive rock genre or an entirely distinct phenomenon. Bands such as Can, which 
-                        included two members who had studied under Karlheinz Stockhausen, tended to be more strongly influenced by 
-                        20th-century classical music than the British bands, whose musical vocabulary leaned more towards the Romantic 
-                        era. Many of these groups were very influential even among bands that had little enthusiasm for the symphonic variety 
-                        of progressive rock.
+                        <h1>Peak Years (1971–76)</h1>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;On October 10, 1969, an album with long-length works, variable-beat performances, 
+                            the use of the Mellotron electronic keyboard and symphony, and lyrics covering the universe and philosophy
+                            which are most of the prog rock elements, was born. This may be the first prog rock album in the history. 
+                            That is King Crimson's In The Court of the Crimson King. They were the pioneer for the style of prog rock. 
+                            The cover of the album is an illusionary face with a wide open mouth. This famous cover was designed by British 
+                            artist Barry Godber, who was only 23 years old at the time. However, it is a pity that he suffered from heart 
+                            disease and passed away in the following year.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;King Crimson's first album, which combines psychedelic rock, string music, electronic 
+                            music components, experimental Jazz, Melotron electronic keyboards, new recording technology, and even a little 
+                            metal and Folk composition shows a very competitive and aggressive new music genre -- prog rock.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;During this period, some other former rock bands also started their unique creations and 
+                            inventions. The more well-known bands include Yes, Genesis, Jethro Tull, Pink Floyd, etc. A few years later, countless 
+                            prog rock bands will think of these pioneering bands as their enlightenment bands.</p>
+                        <h3>See Also:</h3>
+                        <a href="genesis.html">&nbsp;&nbsp;&nbsp;&nbsp;Genesis</a>
+                        <a href="kingcrimson.html">&nbsp;&nbsp;&nbsp;&nbsp;King Crimson</a>
+                        <a href="pinkfloyd">&nbsp;&nbsp;&nbsp;&nbsp;Pink Floyd</a>
+                        <a href="yes.html">&nbsp;&nbsp;&nbsp;&nbsp;Yes</a>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;The bands above are just the tip of the iceberg of the prog rock bands that emerged in the 1970s, 
+                            because during that period, the prog rock bands were booming worldwide. Kansas, Styx from the United States, and Supertramp 
+                            from the United Kingdom established the Art Rock category with that simple and popular form of music. Germany bands like 
+                            Can, Faust, and Neu! established German prog rock -- Kraut Rock with their electronic style. French has bands such as Clearlight and 
+                            Mona Lisa, which focused on melody and atmosphere.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;However, in the mid and late 1970s, there was a more independent and more aggressive music style 
+                            than the prog rock exists. That is punk rock. Punk rock was the direct consequence of the decadence of prog rock. After 1975, 
+                            the space for prog rock to survive has been gradually reduced, almost to a precarious point. Some bands have been forced to 
+                            change their music style to adapt to the new music trend, but there are also some prog rock artists in order to maintain the 
+                            prog rock style, and their own dignity. They began to prepare for the second wave of aprog rock music.</p>
                     </div>
                 </div>
                 <div class="catalog">
                     <div class="side">
-                        <div class="tag">Decline and fragmentation &gt;</div>
+                        <div class="tag">Age of Decline &gt;</div>
                     </div>
                     <div class="content">
-                        <h1>Decline and fragmentation</h1>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Political and social trends of the late 1970s shifted away from the early 1970s 
-                        hippie attitudes that had led to the genre's development and popularity. The rise in punk cynicism made the 
-                        utopian ideals expressed in progressive rock lyrics unfashionable. Virtuosity was rejected, as the expense of 
-                        purchasing quality instruments and the time investment of learning to play them were seen as barriers to rock's 
-                        nergy and immediacy. There were also changes in the music industry, as record companies disappeared and merged 
-                        into large media conglomerates. Promoting and developing experimental music was not part of the marketing 
-                        strategy for these large corporations, who focused their attention on identifying and targeting profitable market 
-                        niches.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Four of progressive rock's most successful bands – King Crimson, Yes, ELP and Genesis 
-                        – went on hiatus or experienced major personnel changes during the mid-1970s. Macan notes the September 1974 
-                        breakup of King Crimson as particularly significant, calling it the point when "all English bands in the genre 
-                        should have ceased to exist". More of the major bands, including Van der Graaf Generator, Gentle Giant and 
-                        U.K., dissolved between 1978 and 1980. Many bands had by the mid-1970s reached the limit of how far they 
-                        could experiment in a rock context, and fans had wearied of the extended, epic compositions. The sounds of the 
-                        Hammond, Minimoog and Mellotron had been thoroughly explored, and their use became clichéd. Those bands who 
-                        continued to record often simplified their sound, and the genre fragmented from the late 1970s onwards. In 
-                        Robert Fripp's opinion, once "progressive rock" ceased to cover new ground – becoming a set of conventions to 
-                        be repeated and imitated – the genre's premise had ceased to be "progressive".<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;The era of record labels investing in their artists, giving them freedom to experiment 
-                        and limited control over their content and marketing, ended with the late 1970s.[113] Corporate artists and 
-                        repertoire staff exerted an increasing amount of control over the creative process that had previously belonged to 
-                        the artists, and established acts were pressured to create music with simpler harmony and song structures and fewer 
-                        changes in meter. A number of symphonic pop bands, such as Supertramp, 10cc, the Alan Parsons Project and the Electric 
-                        Light Orchestra, brought the orchestral-style arrangements into a context that emphasised pop singles while allowing 
-                        for occasional instances of exploration. Jethro Tull, Gentle Giant and Pink Floyd opted for a harder sound in the style 
-                        of arena rock.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Few new progressive rock bands formed during this era, and those who did found that 
-                        record labels were not interested in signing them. The short-lived supergroup U.K. was a notable exception 
-                        since its members had established reputations; they produced two albums that were stylistically similar to previous 
-                        artists and did little to advance the genre. Part of the genre's legacy in this period was its influence on other 
-                        styles, as several European guitarists brought a progressive rock approach to heavy metal and laid the groundwork 
-                        for progressive metal. Michael Schenker, of UFO; and Uli Jon Roth, who replaced Schenker in Scorpions, expanded the 
-                        modal vocabulary available to guitarists. Roth studied classical music with the intent of using the guitar in the 
-                        way that classical composers used the violin. Finally, the Dutch-born and classically trained Alex and Eddie Van 
-                        Halen formed Van Halen, featuring ground-breaking whammy-bar, tapping and cross-picking guitar performances that 
-                        influenced "shred" music in the 1980s.
+                        <h1>Age of Decline (1980-1989)</h1>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;When the punk rock wave swept in 1977, the market environment for most prog rock bands was quite harsh. 
+                            Prog rock has become an optional marginal culture. Some bands such as Genesis and Yes have slowly transformed their music style. 
+                            They have survived by adding more works with commercial elements. Some experienced musicians have found a balance between 
+                            prog rock and commercialization and do a good job. Of course, there are bands like King Crimson who continue to stick to the 
+                            Style of prog rock.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Prog rock always have loyal audiences, so there would still be some young people joining the prog rock 
+                            field and continue exploring. With the efforts of these new bands, the second wave of prog rock was born. This wave is called 
+                            neo prog. Among them, the most famous bands are probably Rush, Marillion and IQ.</p>
+                        <h3>Rush</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Rush is the founder of the prog metal, because Rush's conceptual heavy-metal-style performance. The 
+                            bass technique of Geddy Lee and Neil Peart's drum percussion have influenced countless later prog metal bands and musicians. 
+                            Rush was formed in the late 1960s. From their 1976 album 2112, they officially entered the field of prog rock.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Rush released three important works in the early 80s, which are Permanent Waves, Moving Pictures 
+                            and Signals. These excellent works contain a rigorous prog rock style and a little bit commercial elements, which laid a 
+                            solid foundation for prog metal.</p>
+                        <h3>Marillion</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Marillion is one of Neo Prog's most famous bands and was originally formed by drummer Mick Pointer. 
+                            After guitarist Steve Rothery and lead singer Fish joined in, the band officially changed its name to Marillion. In 1982, 
+                            Marillion released their first album. Many people will compare them with Genesis, because when peeople first listen to Fish, 
+                            they will feel that his voice is similar to Genesis' Peter Gabriel in many ways. Then drummer Mick Pointer left the band, Ian 
+                            Moseley took his place, and Marillion released a timeless classic album, Misplaced Childhood, in Neo Prog history in 1985. 
+                            In 1988, Fish officially left Marillion, and Steve Hogarth became the new lead singer of the band. With the change of the new 
+                            lead singer, Marillion's style changed.</p>
+                        <h3>IQ</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;In addition to Marillion, IQ is the most successful british neo prog band in the 1980s. In fact, IQ and 
+                            Marillion are still slightly different in style. IQ's playing style is more atmospheric and its instrumental performance is more 
+                            attractive. They released their first album in 1983. The band's lead singer Peter Nichols left the band in 1985, but returned to 
+                            IQ in 1993. The other two members of IQ, keyboard player Martin Orford and Bass player John Jowitt, are also very tanlented.</p>
                     </div>
                 </div>
                 <div class="catalog">
                     <div class="side">
-                        <div class="tag">Commercialisation &gt;</div>
+                        <div class="tag">New Age &gt;</div>
                     </div>
                     <div class="content">
-                        <h1>Commercialisation</h1>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Some established artists moved towards music that was simpler and more commercially 
-                        viable. Arena rock bands like Journey, Kansas, Styx, GTR, ELO and Foreigner either had begun as progressive 
-                        rock bands or included members with strong ties to the genre. These groups retained some of the song complexity 
-                        and orchestral-style arrangements, but they moved away from lyrical mysticism in favour of more conventional themes 
-                        such as relationships. Genesis transformed into a successful pop act, and a re-formed Yes released the relatively 
-                        mainstream 90125 (1983), which yielded their only US number-one single, "Owner of a Lonely Heart". These 
-                        radio-friendly groups have been called "prog lite". One band who remained successful into the 1980s while maintaining 
-                        a progressive approach was Pink Floyd, who released The Wall late in 1979. The album, which brought punk anger 
-                        into progressive rock, was a huge success and was later filmed as Pink Floyd – The Wall.
+                        <h1>New Age (1990-now)</h1>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;The revival of prog rock in the 1980s was not successful, only few band are remembered by the masses. 
+                            However, since the 1990s, the  prog rock spirit has begun to return, and more and more musicians with outstanding ideas have 
+                            appeared. The Flower Kings and Spock's Beard take the idea of prog rock to the extreme. At the same time, as another product 
+                            of the development of rock, metal has also begun to find a place in prog rock. Excellent bands such as Dream Theater and Pain 
+                            of Salvation have taken prog metal to a whole new level.</p>
+                        <h3>The Flower Kings</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Roine Stolt of The Flower Kings is really an excellent guitarist and composer who created many beautiful 
+                            melodies. In 1993, Roine Stolt founded The Flower Kings. The band is very prolific. They tend to releases an album almost every 
+                            year, sometimes 2CDs, but without affecting their music quality.</p>
+                        <h3>Dream Theater</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Dream Theater is today's most famous and influential prog metal band, their 1992 album Images & Words 
+                            clearly established the conception of prog metal. Dream Theater's music combines the strong rhythms that heavy metal should have, 
+                            organized melody, and extremely intricate arrangements. Since most members of the band were graduated from the conservatory, they 
+                            rely on a solid music philosophy and instrumental playing foundation. They developed the prog metal to a position that almost 
+                            reached its peak. The members of the band are also famous for their obsession with solo, because almost every member of the bands 
+                            has almost reached the highest level in the field of instruments they play. Guitarist John Petrucci, drummer Mike Portnoy, and 
+                            keyboardist Jordan Rudess made an experimental extension of the concept of prog metal in the The Perfect Element Part I and Part 
+                            II released in 1998 and 1999. The addition of the fusion element makes prog metal more diverse.</p>
+                        <h3>Pain of Salvation</h3>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Pain of Salvation, formed by Daniel Gildenlow, is onr of the most alternative prog metal band. Many times, 
+                            people will feel that their style is outside the prog metal. They have done many conceptual attempts in their albums, sometimes 
+                            along with Gothic elements. Their style has gradually changed over time. As a non-traditional prog metal band, they have occupied 
+                            a place in the prog metal.</p>
                     </div>
                 </div>
                 <div class="catalog">
-                    <div class="side">
-                        <div class="tag">Post-punk and post-progressive &gt;</div>
-                    </div>
-                    <div class="content">
-                        <h1>Post-punk and post-progressive</h1>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Punk and prog were not necessarily as opposed as is commonly believed. Both genres 
-                        reject commercialism, and punk bands did see a need for musical advancement. Author Doyle Green noted that 
-                        post-punk emerged as "a kind of 'progressive punk'". Post-punk artists rejected the high cultural references 
-                        of 1960s rock artists like the Beatles and Bob Dylan as well as paradigms that defined rock as "progressive", 
-                        "art", or "studio perfectionism". In contrast to punk rock, it balances punk's energy and skepticism with art 
-                        school consciousness, Dadaist experimentalism, and atmospheric, ambient soundscapes. World music, especially 
-                        African and Asian traditions, was also a major influence. Progressive rock's impact was felt in the work of 
-                        some post-punk artists, although they tended not to emulate classical rock or Canterbury groups but rather Roxy 
-                        Music, King Crimson, and krautrock bands, particularly Can.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;The term "post-progressive" identifies progressive rock that returns to its original 
-                        principles while dissociating from 1970s prog styles, and may be located after 1978. Martin credits Roxy 
-                        Music's Brian Eno as the sub-genre's most important catalyst, explaining that his 1973–77 output merged aspects 
-                        of progressive rock with a prescient notion of new wave and punk. New wave, which surfaced around 1978–79 with 
-                        some of the same attitudes and aesthetic as punk, was characterised by Martin as "progressive" multiplied by 
-                        "punk". Bands in the genre tended to be less hostile towards progressive rock than the punks, and there were 
-                        crossovers, such as Fripp and Eno's involvement with Talking Heads, and Yes' replacement of Rick Wakeman and 
-                        Jon Anderson with the pop duo the Buggles. When King Crimson reformed in 1981, they released an album, 
-                        Discipline, which Macan says "inaugurated" the new post-progressive style. According to Martin, Talking Heads 
-                        also created "a kind of new-wave music that was the perfect synthesis of punk urgency and attitude and 
-                        progressive-rock sophistication and creativity. A good deal of the more interesting rock since that time is 
-                        clearly 'post-Talking Heads' music, but this means that it is post-progressive rock as well."
-                    </div>
-                </div>
-                <div class="catalog">
-                    <div class="side">
+                    <div class="side" id="citation-side">
                         <div class="tag">Citation &gt;</div>
                     </div>
-                    <div class="content" id="citation">
+                    <div class="content">
                         <h1>Citation</h1>
-                        Wikipedia contributors. (2020, March 4). Progressive rock. In Wikipedia, The Free Encyclopedia. 
-                        Retrieved 08:17, March 8, 2020, from 
+                        <p>Wikipedia contributors. (2020, March 4). Progressive rock. In Wikipedia, The Free Encyclopedia. 
+                        Retrieved 08:17, March 8, 2020, from </p>
                         <a href="https://en.wikipedia.org/w/index.php?title=Progressive_rock&oldid=943807608">
                             &nbsp;&nbsp;&nbsp;&nbsp;https://en.wikipedia.org/w/index.php?title=Progressive_rock&oldid=943807608
                         </a>
