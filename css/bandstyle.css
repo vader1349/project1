@@ -42,8 +42,13 @@ p{
 p:hover{
     color: wheat;
 }
-h1,h2{
+h1,h2,h3{
     color: wheat;
+}
+iframe{
+    align-self: center;
+    width:560px;
+    height:315px;
 }
 #citation{
     border-bottom: 0;
@@ -53,4 +58,9 @@ h1,h2{
 }
 .content a:hover{
     color:#930000;
+}
+@media (max-width: 600px){
+    iframe{
+        width: 90%;
+    }
 }
