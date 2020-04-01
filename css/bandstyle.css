@@ -49,6 +49,7 @@ iframe{
     align-self: center;
     width:560px;
     height:315px;
+    border: 0;
 }
 #citation{
     border-bottom: 0;
