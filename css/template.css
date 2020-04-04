@@ -310,10 +310,13 @@ span{
         height:150px;
     }
     #menu a{
-        width: 50vw;
+        width: 50%;
+    }
+    #menu ul{
+        width: 50%;
     }
     .menu-element{
-        width: 50vw;
+        width: 100%;
     }
     .menu-element:active{
         background-color: #930000;
@@ -321,9 +324,13 @@ span{
     }
     .sub-element{
         left: 100%;
-        width: 50vw;
+        width: 100%;
+    }
+    .sub-element:hover{
+        border-left: 0;
     }
     .sub-element:active{
+        border-left: 0;
         background-color: #930000;
         color: wheat;
         transition: 0.3s;
