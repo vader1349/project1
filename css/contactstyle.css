@@ -40,4 +40,9 @@ table{
     textarea{
         width: 70vw;
     }
+    #button:active{
+        background-color: #930000;
+        color: wheat;
+        cursor: pointer;
+    }
 }

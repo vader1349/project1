@@ -190,6 +190,7 @@ ul{
     top:120px;
 }
 .sub-element:hover{
+    border-left: 10px solid #930000;
     background-color: #930000;
     color: wheat;
     transition: 0.3s;
@@ -272,8 +273,15 @@ span{
     #search-log-sign{
         flex-direction: column;
     }
+    #search-icon:active{
+        background-color: #930000;
+    }
     .log-sign{
         width: 50vw;
+    }
+    .log-sign:active{
+        background-color: #930000;
+        color: wheat;
     }
     #slide{
         height: 200px;
@@ -292,6 +300,9 @@ span{
     #left img,#right img{
         width: 20px;
     }
+    #left:active,#right:active{
+        background-color: rgba(80,80,80,0.5);
+    }
     #menu{
         position: static;
         display:flex;
@@ -304,9 +315,18 @@ span{
     .menu-element{
         width: 50vw;
     }
+    .menu-element:active{
+        background-color: #930000;
+        color: wheat;
+    }
     .sub-element{
         left: 100%;
         width: 50vw;
+    }
+    .sub-element:active{
+        background-color: #930000;
+        color: wheat;
+        transition: 0.3s;
     }
     #sub1{
         top:0;

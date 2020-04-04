@@ -36,19 +36,17 @@ p:hover{
 h1,h3{
     color: wheat;
 }
-.links li{
+.link{
     width: 200px;
-    border-left: 3px solid #930000;
+    border-left: 3px solid wheat;
     margin: 10px;
     transition: 0.3s;
-}
-.links li>a{
     font-size: 25px;
+    color: #930000;
 }
-.links li:hover{
+.link:hover{
+    border-left:10px solid #930000;
     background-color: #930000;
-}
-.links li:hover>a{
     color: wheat;
 }
 #citation-side{
@@ -56,4 +54,11 @@ h1,h3{
 }
 .content a:hover{
     color:#930000;
+}
+@media (max-width: 600px){
+    .link:active{
+        border-left:10px solid #930000;
+        background-color: #930000;
+        color: wheat;
+    }
 }
