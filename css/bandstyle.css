@@ -43,6 +43,7 @@ p:hover{
     color: wheat;
 }
 h1,h2,h3{
+    font-family: 'Cookie', cursive;
     color: wheat;
 }
 iframe{

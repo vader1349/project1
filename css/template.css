@@ -50,7 +50,6 @@ a{
     border-bottom:3px solid #930000;
     width: auto;
     height:50px;
-    font-size:40px;
     color: #930000;
 }
 #header-pic{
@@ -60,11 +59,14 @@ a{
     height:40px;
 }
 #title{
+    font-size: 50px;
+    font-family: 'Fascinate Inline', cursive;
     position:absolute;
     left: 50px;
-    top: 20px;
+    top: 10px;
 }
 #search-log-sign{
+    font-size:40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -216,6 +218,7 @@ ul{
 }
 span{
     font-size: 2em;
+    font-family: 'Fascinate Inline', cursive;
 }
 .pic{
     width: 100%;
